@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ruby Getting Started on Heroku</title>
+  <title>IIC3103 - Sitio de Noticias en Ruby</title>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -9,16 +9,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">IIC3101 News</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
       <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span>Noticias</a>
+        <a href="/"><span class="glyphicon glyphicon-globe"></span> Noticias</a>
       </li>
       <li class="active">
-        <a href="/news"><span class="glyphicon glyphicon-home"></span>Adminstrar</a>
+        <a href="/news"><span class="glyphicon glyphicon-edit"></span> Adminstrar</a>
       </li>
-
     </ul>
   </div>
 </nav>
