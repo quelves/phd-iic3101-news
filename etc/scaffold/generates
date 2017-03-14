@@ -1,0 +1,3 @@
+rails g scaffold New title:string subtitle:text body:text published:date active:boolean author:string
+rails g scaffold Comment author:string content:text published:date news:references comment:references
+rails g migration add_index_to_news :create_at, :unique => false

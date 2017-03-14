@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @news.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @news.subtitle %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @news.body %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @news.published %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @news.active %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @news.author %>
+</p>
+
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Back', news_index_path %>

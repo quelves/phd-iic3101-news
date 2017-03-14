@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails phd-iic3101-news: production" uuid="566e51b0-984d-4286-aed5-05f406d96757">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df88dff9dfefdfe9dff8dfefdffedff5dfe1dfefdff3dff5dfe8dfebdff9dfefdf88dff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails phd-iic3101-news: development" uuid="1beea360-e59d-47a9-ac47-d053ccc96166">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <resolve-scope>iic3101_news_db_dev:public,postgres</resolve-scope>
+    </data-source>
+    <data-source name="Rails phd-iic3101-news: test" uuid="ae99933c-9d70-4ab7-8e23-dded9b7b3b3c">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+    </data-source>
+  </component>
+</project>
