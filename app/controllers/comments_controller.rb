@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  belongs_to :news
 
   # GET /comments
   # GET /comments.json

@@ -1,34 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Titulo:</strong>
-  <%= @news.title %>
-</p>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1> <%= @news.title %> </h1>
+    <div>
+      por <span class="label label-default"><%= @news.author %></span> en <span><%= @news.published %></span>
+    </div>
+    <br>
+    <div class="summary"><%= @news.subtitle %></div>
+    <br>
+    <div class="content">  <%= @news.body %></div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+  <h2>Comentarios</h2>
+  </div>
+  <div class="col-md-2"></div>
 
-<p>
-  <strong>Subtitle:</strong>
-  <%= @news.subtitle %>
-</p>
+</div>
 
-<p>
-  <strong>Body:</strong>
-  <%= @news.body %>
-</p>
 
-<p>
-  <strong>Published:</strong>
-  <%= @news.published %>
-</p>
 
-<p>
-  <strong>Active:</strong>
-  <%= @news.active %>
-</p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @news.author %>
-</p>
 
 <%= link_to 'Edit', edit_news_path(@news) %> |
 <%= link_to 'Back', news_index_path %>
