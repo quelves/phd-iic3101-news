@@ -20,23 +20,28 @@
     <% @news.comments.each do |comment| %>
     <h2>Comentarios</h2>
     <div class="row">
-      <div class="col-md-1">
-        <%= comment.author %>
-      </div>
-      <div class="col-md-9">
-        <%= comment.content %>
+      <div class="media">
+        <div class="media-left media-top">
+          <a href="#">
+            <%= image_tag("user.jpg", border: 0) %> </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading"><%= comment.author %></h4>
+          <%= comment.content %>
+        </div>
       </div>
     </div>
     <% end %>
     <br>
   </div>
-  <div class="col-md-2"></div>
-
 </div>
-
-
-
-
+<div class="row">
+  <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <%= render 'comment_form', comment: @comment %>
+    </div>
+</div>
 
 <%= link_to 'Edit', edit_news_path(@news) %> |
 <%= link_to 'Back', news_index_path %>
