@@ -1,0 +1,8 @@
+{
+  "name": "IIC3101-News",
+  "description": "A Article app",
+  "image": "heroku/ruby",
+  "repository": "https://github.com/quelves/phd-iic3101-news.git",
+  "keywords": ["ruby", "rails" ],
+  "addons": [ "heroku-postgresql" ]
+}
