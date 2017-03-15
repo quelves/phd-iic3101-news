@@ -8,6 +8,14 @@
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:iic3101_news_db_prod</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-9.4-1201.jdbc4.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-driver-license.txt</url>
+        </library>
+      </libraries>
     </data-source>
     <data-source source="LOCAL" name="Rails phd-iic3101-news: development" uuid="1beea360-e59d-47a9-ac47-d053ccc96166">
       <driver-ref>postgresql</driver-ref>
@@ -16,6 +24,14 @@
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:iic3101_news_db_dev</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-9.4-1201.jdbc4.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-driver-license.txt</url>
+        </library>
+      </libraries>
     </data-source>
     <data-source source="LOCAL" name="Rails phd-iic3101-news: test" uuid="ae99933c-9d70-4ab7-8e23-dded9b7b3b3c">
       <driver-ref>postgresql</driver-ref>
@@ -24,6 +40,14 @@
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:iic3101_news_db_test</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-9.4-1201.jdbc4.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/PostgreSQL/9.4-1201/postgresql-driver-license.txt</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

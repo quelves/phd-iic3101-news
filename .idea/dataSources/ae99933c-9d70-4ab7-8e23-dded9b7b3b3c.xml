@@ -3,13 +3,13 @@
   <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
     <root id="1"/>
     <database id="2" parent="1" name="iic3101_news_db_test">
-      <ObjectId>24779</ObjectId>
+      <ObjectId>25025</ObjectId>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-03-14.12:03:57.342</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-03-15.00:33:24.904</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>

@@ -15,7 +15,14 @@
               <!--div class=""> <a href="/Deportes">Deportes</a -->
               </div><h5><%= link_to news.title, news %></h5>
               <div class="summary">
-                <%= news.subtitle[0..250] + "..." %>
+                <% if news.subtitle.length > 249 %>
+                  <%= news.subtitle[0..249] + "..." %>
+                <% else %>
+                    <%= news.subtitle%>
+                <% end %>
+                <% if news.comments.count > 0 %>
+                    <a href="#" title="<%= news.comments.count %> Comentarios"> <span class="badge"><%= news.comments.count %></span></a><br>
+                <% end %>
               </div>
             </div>
           </article>

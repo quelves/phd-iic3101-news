@@ -13,7 +13,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <user-name>postgres</user-name>
       <user-password>dfd8dfc5dfc5dfde</user-password>
-      <resolve-scope>iic3101_news_db_dev:public,postgres</resolve-scope>
+      <resolve-scope>iic3101_news_db_dev:postgres,public</resolve-scope>
     </data-source>
     <data-source name="Rails phd-iic3101-news: test" uuid="ae99933c-9d70-4ab7-8e23-dded9b7b3b3c">
       <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">

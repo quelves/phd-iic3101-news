@@ -8,7 +8,12 @@
     <br>
     <div class="summary"><%= @news.subtitle %></div>
     <br>
-    <div class="content">  <%= @news.body %></div>
+    <% if @news.body.length > 999 %>
+        <div class="content">  <%= @news.body[0..999] + "..." %></div>
+    <% else %>
+        <div class="content">  <%= @news.body %></div>
+
+    <% end %>
   </div>
   <div class="col-md-2"></div>
 </div>
