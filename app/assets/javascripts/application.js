@@ -14,3 +14,22 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+    function mostrar() {
+        div = document.getElementById('flotante');
+        div.style.display = '';
+    }
+
+function view_element(hidded, view_action) {
+    div = document.getElementById(hidded);
+    div.style.display = '';
+    obj = document.getElementById(view_action);
+    obj.style.visibility = 'hidden';
+
+
+}
+
+function cerrar() {
+    div = document.getElementById('flotante');
+    div.style.display = 'none';
+}

@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
-.news_box {
-
+.elipseellipsis {
+    display:inline-block;
+    width: 180ch;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
 }
+

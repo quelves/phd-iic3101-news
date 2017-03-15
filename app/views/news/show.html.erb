@@ -1,46 +1,51 @@
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <h1> <%= @news.title %> </h1>
-    <div>
-      por <span class="label label-default"><%= @news.author %></span> en <span><%= @news.created_at %></span>
-    </div>
-    <br>
-    <div class="summary"><%= @news.subtitle %></div>
-    <br>
-    <% if @news.body.length > 999 %>
-        <div class="content">  <%= @news.body[0..999] + "..." %></div>
-    <% else %>
-        <div class="content">  <%= @news.body %></div>
-
-    <% end %>
-  </div>
-  <div class="col-md-2"></div>
-</div>
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <h2>Comentarios</h2>
-    <% @news.comments.each do |comment| %>
-    <div class="row">
-      <div class="media">
-        <div class="media-left media-top">
-          <a href="#">
-            <%= image_tag("user.jpg", border: 0) %> </a>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading"><%= comment.author %></h4>
-          <%= comment.content %>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1> <%= @news.title %> </h1>
+      <div>
+        por <span class="label label-default"><%= @news.author %></span> en <span><%= @news.created_at %></span>
       </div>
+      <br>
+      <div class="summary"><%= @news.subtitle %></div>
+      <br>
+      <% len = @news.body.length %>
+      <% if len > 1000 %>
+          <div class="content">
+            <span><%= @news.body[0..999] %></span><span id="body_hidded" style="display:none;"><%= @news.body[1000..len-1] %></span>
+            <span id="body_view_more"><a href="javascript:view_element('body_hidded', 'body_view_more');">...ler mas</a></span>
+          </div>
+
+
+      <% else %>
+          <div class="content">  <%= @news.body %></div>
+
+      <% end %>
     </div>
-    <% end %>
-    <br>
-  </div>
-</div>
-<div class="row">
     <div class="col-md-2"></div>
-    <div class="col-md-8">
+  </div>
+  <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+      <h2>Comentarios</h2>
+      <% @news.comments.each do |comment| %>
+          <div class="media">
+            <div class="media-left media-top">
+              <a href="#">
+                <%= image_tag("user.jpg", border: 0) %> </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><%= comment.author %></h4>
+              <%= comment.content %>
+            </div>
+          </div>
+      <% end %>
+      <br>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
       <div class="panel panel-default">
         <div class="panel-heading">Comentar</div>
         <div class="panel-body">
@@ -48,5 +53,6 @@
         </div>
       </div>
     </div>
+    <div class="col-xs-1"></div>
+  </div>
 </div>
-
