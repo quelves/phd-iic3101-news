@@ -17,8 +17,8 @@
 <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <% @news.comments.each do |comment| %>
     <h2>Comentarios</h2>
+    <% @news.comments.each do |comment| %>
     <div class="row">
       <div class="media">
         <div class="media-left media-top">
@@ -36,12 +36,14 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-md-2"></div>
     <div class="col-md-2"></div>
     <div class="col-md-8">
-      <%= render 'comment_form', comment: @comment %>
+      <div class="panel panel-default">
+        <div class="panel-heading">Comentar</div>
+        <div class="panel-body">
+          <%= render 'comment_form', comment: @comment %>
+        </div>
+      </div>
     </div>
 </div>
 
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>
