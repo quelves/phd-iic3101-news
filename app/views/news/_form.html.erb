@@ -14,23 +14,20 @@
   <div class="form-group">
     <label>Titulo</label>
     <div class="field">
-      <%= f.text_field :title %>
+      <%= f.text_field(:title, :class => 'form-control') %>
     </div>
-
+    <br>
     <label>Bajada</label>
-    <div class="field">
-      <%= f.text_area :subtitle %>
-    </div>
+    <%= f.text_area(:subtitle, :rows => 4, :class => 'form-control') %>
+    <br>
 
     <label>Cuerpo</label>
-    <div class="field">
-      <%= f.text_area :body %>
-    </div>
+    <%= f.text_area(:body, :rows => 7, :class => 'form-control') %>
+    <br>
 
     <label>Author</label>
-    <div class="field">
-      <%= f.text_field :author %>
-    </div>
+    <%= f.text_field(:author, :class => 'form-control') %>
+    <br>
 
     <button class="btn btn-primary" type="submit">Crear Noticia</button>
   </div>

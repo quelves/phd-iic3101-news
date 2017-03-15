@@ -1,5 +1,8 @@
 <h1>Crear Noticia</h1>
-
-<%= render 'form', news: @news %>
-
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <%= render 'form', news: @news %>
+  </div>
+</div>
 <%= link_to 'Back', news_index_path %>
