@@ -1,39 +1,47 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+  <h1>Noticias</h1>
+  <button type="button" class="btn btn-success"><%= link_to 'Nuevo', new_news_path %></button>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Titulo</th>
+            <th class="hidden-xs">Bajada</th>
+            <th class="hidden-xs">Conteudo</th>
+            <th class="hidden-xs">Fecha Publicacion</th>
+            <th class="hidden-xs">Activo</th>
+            <th class="hidden-xs">Autor</th>
+            <th colspan="3"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @news.each do |news| %>
+              <tr>
+                <td><%= news.title[0..30] %><%= link_to '...', news %></td>
+                <td class="hidden-xs"><%= news.subtitle[0..200] %><%= link_to '...', news %></td>
+                <td class="hidden-xs"><%= news.body[0..400] %><%= link_to '...', news %></td>
+                <td class="hidden-xs"><%= news.created_at %></td>
+                <td class="hidden-xs"><%= news.active %></td>
+                <td class="hidden-xs"><%= news.author %></td>
 
-<h1>Noticias</h1> <button type="button" class="btn btn-success"><%= link_to 'Nuevo', new_news_path %></button>
-<div class="table-responsive">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Titulo</th>
-      <th>Bajada</th>
-      <th>Conteudo</th>
-      <th>Fecha Publicacion</th>
-      <th>Activo</th>
-      <th>Autor</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @news.each do |news| %>
-      <tr>
-        <td><%= news.title[1..30]%><%= link_to '...', news %></td>
-        <td><%= news.subtitle[1..200] %><%= link_to '...', news %></td>
-        <td><%= news.body[1..400]%><%= link_to '...', news %></td>
-        <td><%= news.published%></td>
-        <td><%= news.active%></td>
-        <td><%= news.author%></td>
-
-        <td><button type="button" class="btn btn-info"><%= link_to 'abrir', news %></button></td>
-        <td><button type="button" class="btn btn-warning"><%= link_to 'alterar', edit_news_path(news) %></button></td>
-        <td><button type="button" class="btn btn-danger"><%= link_to 'remove', news, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+                <td>
+                  <button type="button" class="btn btn-info"><%= link_to 'abrir', news %></button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-warning"><%= link_to 'alterar', edit_news_path(news) %></button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger"><%= link_to 'remove', news, method: :delete, data: {confirm: 'Are you sure?'} %></button>
+                </td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
-<br>
-
 
