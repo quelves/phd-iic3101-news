@@ -11,37 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+  <div class="form-group">
+    <label>Titulo</label>
+    <div class="field">
+      <%= f.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= f.label :subtitle %>
-    <%= f.text_area :subtitle %>
-  </div>
+    <label>Bajada</label>
+    <div class="field">
+      <%= f.text_area :subtitle %>
+    </div>
 
-  <div class="field">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
+    <label>Cuerpo</label>
+    <div class="field">
+      <%= f.text_area :body %>
+    </div>
 
-  <div class="field">
-    <%= f.label :published %>
-    <%= f.date_select :published %>
-  </div>
+    <label>Author</label>
+    <div class="field">
+      <%= f.text_field :author %>
+    </div>
 
-  <div class="field">
-    <%= f.label :active %>
-    <%= f.check_box :active %>
-  </div>
-
-  <div class="field">
-    <%= f.label :author %>
-    <%= f.text_field :author %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+    <button class="btn btn-primary" type="submit">Crear Noticia</button>
   </div>
 <% end %>
