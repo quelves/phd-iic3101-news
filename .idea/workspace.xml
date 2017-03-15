@@ -7,9 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e6d7ee1a-d08d-493a-b4e9-3a3cadb37e6c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/news/show.html.erb" afterPath="$PROJECT_DIR$/app/views/news/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -808,12 +805,12 @@
       <option name="presentableId" value="Default" />
       <updated>1489465627240</updated>
       <workItem from="1489465628879" duration="1105000" />
-      <workItem from="1489494450596" duration="34678000" />
+      <workItem from="1489494450596" duration="34907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35783000" />
+    <option name="totallyTimeSpent" value="36012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
