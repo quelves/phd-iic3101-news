@@ -15,6 +15,11 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function(){
+    //código a ejecutar cuando el DOM está listo para recibir instrucciones.
+console.log("jquery ready!");
+});
+
     function mostrar() {
         div = document.getElementById('flotante');
         div.style.display = '';
